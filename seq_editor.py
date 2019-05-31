@@ -15,3 +15,6 @@ def import_seq(file='sequence.txt'):
 	with open(file, 'r') as f:
 		sequence = f.read()
 		return sequence.strip()
+
+def rev_comp(seq):
+	return complement(reverse(seq))
